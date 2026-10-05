@@ -1,0 +1,158 @@
+header {
+  padding: 24px;
+  text-align: center;
+  background: #e3e3e3;
+  border-bottom: 1px solid #bbb;
+}
+
+main {
+  padding: 28px;
+}
+
+/*=============navigation buttons============= */
+.navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.navigation a {
+  display: inline-block;
+  min-width: 100px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  background: #f3f3f3;
+  border: 1px solid #999;
+}
+
+.navigation a:hover {
+  background: #d6d6d6;
+}
+
+/*=============saerching bar and filter=============*/
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #eaeaea;
+  border: 1px solid #ccc;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 150px;
+  max-width: 100%;
+}
+
+.controls label:first-child {
+  flex: 1;
+}
+
+.controls input,
+.controls select {
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  color: #333;
+  background: #fafafa;
+  border: 1px solid #aaa;
+}
+
+/*=============listview=============*/
+.image-list {
+  padding: 0;
+  margin: 16px 0;
+  list-style: none;
+  border: 1px solid #ccc;
+}
+
+.image-list li + li {
+  border-top: 1px solid #ccc;
+}
+
+.list-link {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.list-link:hover,
+.list-link:focus-visible {
+  background: #dedede;
+}
+
+.list-meta {
+  display: block;
+  margin-top: 6px;
+  color: #666;
+  font-size: 14px;
+}
+
+/*=============gallery=============*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-card {
+  padding: 12px;
+  text-decoration: none;
+  background: #eee;
+  border: 1px solid #bbb;
+}
+
+.gallery-card:hover {
+  background: #ddd;
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-card h3 {
+  margin: 12px 0 8px;
+}
+
+/*=============detail page=============*/
+.detail-image {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  margin: 20px 0;
+  background: #e5e5e5;
+  border: 1px solid #ccc;
+}
+
+.description {
+  padding: 16px;
+  margin-top: 20px;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 16px;
+  }
+
+  .controls label {
+    width: 100%;
+  }
+}
