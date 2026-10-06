@@ -33,7 +33,7 @@ export async function getImages(): Promise<NasaImage[]> {
   const response = await axios.get<NasaResponse>(NASA_API_URL, {
     params: {
       media_type: "image",
-      page_size: 25,
+      page_size: 500,
     },
     timeout: 15000,
   });

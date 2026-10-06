@@ -53,7 +53,7 @@ function App() {
             <Route path="/list" element={<ListView images={images} />} />
             <Route path="/gallery" element={<GalleryView images={images} />} />
             <Route path="/detail/:id" element={<DetailView images={images} />} />
-            <Route path="*" element={<p>Page not found.</p>} />
+            <Route path="*" element={<p>404 Page not found.</p>} />
           </Routes>
         )}
       </main>
@@ -86,7 +86,7 @@ function ListView({ images }: ViewProps) {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Enter a query (For example, enter Galaxy)"
+            placeholder="Enter a query (For example, enter SpaceX)"
           />
         </label>
 
